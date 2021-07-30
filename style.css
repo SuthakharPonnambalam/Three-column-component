@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+    font-family: 'Lexend Deca', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    
+}
+
+.panel{
+    /* background-color: #fff;
+    border: 1px solid black; */
+    border-radius: 10px ;
+    padding: 15px 25px;
+    width: 100%;
+    height: 500px;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    
+}
+
+.pricing-item{
+    padding: 3rem;
+}
+
+.panel .pricing-item:nth-of-type(1){
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.panel .pricing-item:nth-of-type(2){
+    background-color: hsl(184, 100%, 22%);
+}
+
+.panel .pricing-item:nth-of-type(3){
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.panel .pricing-item .pricing-heading{
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 2rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-top: 2rem;
+}
+
+.panel .pricing-item .pricing-content{
+    color: hsla(0, 0%, 100%, 0.60);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 2rem;
+    letter-spacing: 1.25px;
+    line-height: 1.25;
+    font-size: 1rem;
+}
+
+.panel .pricing-item .pricing-button{
+    margin-top: 6rem;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 2rem;
+    border-style: none;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: hsl(0, 0%, 95%);
+    /* -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none; */
+}
+
+.panel .pricing-item:nth-of-type(1) .pricing-button{
+    color: hsl(31, 77%, 52%, 0.60);
+    border-color: hsl(31, 77%, 52%);
+    
+}
+.panel .pricing-item:nth-of-type(2) .pricing-button{
+    color: hsl(184, 100%, 22%, 0.60);
+    border-color: hsl(184, 100%, 22%);
+}
+.panel .pricing-item:nth-of-type(3) .pricing-button{
+    color: hsl(179, 100%, 13%, 0.60);
+    border-color: hsl(179, 100%, 13%);
+}
+
+
+.panel .pricing-item:nth-of-type(1) .pricing-button:hover{
+    cursor: pointer;
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+    border:2px solid #fff;
+    
+}
+.panel .pricing-item:nth-of-type(2) .pricing-button:hover{
+    cursor: pointer;
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+    border:2px solid #fff;
+    
+}
+.panel .pricing-item:nth-of-type(3) .pricing-button:hover{
+    cursor: pointer;
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+    border:2px solid #fff;
+    
+}
+@media(max-width: 580px){
+    .panel{
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+    .panel .pricing-item:nth-of-type(1){
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .panel .pricing-item:nth-of-type(3){
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 860px){
+    body{
+        width: 100%;
+        height: auto;
+        font-size: 7.5px;
+        padding: 10px 20px;
+        margin: 1rem;
+    }
+    .panel{
+        display: flex;
+    }
+    .pricing-item{
+        padding: 1rem;
+    }
+    
+    .panel .pricing-item .pricing-content{
+        color: hsla(0, 0%, 100%, 0.60);
+        font-family: 'Lexend Deca', sans-serif;
+        margin-top: 3rem;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        font-size: 0.90rem;
+    }
+    .panel .pricing-item .pricing-button{
+        margin-top: 4rem;
+        font-family: 'Lexend Deca', sans-serif;
+        border-radius: 2rem;
+        border-style: none;
+        font-size: 1rem;
+        padding: 1rem;
+        background-color: hsl(0, 0%, 95%);
+    }
+}
