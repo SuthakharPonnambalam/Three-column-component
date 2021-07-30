@@ -20,11 +20,12 @@ The notion of this challenge was to recreate a stats preview component that was 
 
 ## Screenshot
 
-
+![Desktop-layout-screenshot](https://user-images.githubusercontent.com/64744438/127706493-32d106a4-81e3-4331-989c-231a80023d5b.PNG)  
+![Mobile-layout-screenshot](https://user-images.githubusercontent.com/64744438/127706528-d21633eb-6e69-4339-9972-724a8558e7c1.PNG)
 
 ## Links
-[Github repo]() 
-[Github Pages Link]()
+[Github repo](https://github.com/SuthakharPonnambalam/Three-column-component)   
+[Github Pages Link](https://suthakharponnambalam.github.io/Three-column-component/)
 
 ## My Process
 
